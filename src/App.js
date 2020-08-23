@@ -14,7 +14,6 @@ function App() {
     }, []);
 
     async function handleAddProject() {
-        //setProjects([...projects, `novo projeto ${Date.now()}`]);
 
         const response = await api.post('projects', {
             title: `novo projeto ${Date.now()}`,
